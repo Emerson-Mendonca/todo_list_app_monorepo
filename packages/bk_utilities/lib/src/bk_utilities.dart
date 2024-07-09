@@ -1,0 +1,3 @@
+class BkUtilities {
+  const BkUtilities();
+}

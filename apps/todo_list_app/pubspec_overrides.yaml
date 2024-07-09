@@ -1,0 +1,8 @@
+# melos_managed_dependency_overrides: bk_ticketing,bk_ui_kit,bk_utilities
+dependency_overrides:
+  bk_core:
+    path: ../../packages/bk_core
+  bk_ui_kit:
+    path: ../../packages/bk_ui_kit
+  bk_utilities:
+    path: ../../packages/bk_utilities

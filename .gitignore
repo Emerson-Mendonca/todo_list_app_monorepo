@@ -1,0 +1,51 @@
+# Flutter/Dart/Pubspec
+#
+.dart_tool/
+.packages
+build/
+pubspec.lock
+
+# Android
+#
+/.idea/
+/android/.gradle/
+/android/local.properties
+/android/captures/
+*.iml
+/android/key.properties
+
+# iOS/macOS
+#
+Podfile.lock
+Pods/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+ios/Flutter/GeneratedPluginRegistrant.h
+ios/Flutter/GeneratedPluginRegistrant.m
+/ios/*.xcodeproj/project.xcworkspace/
+xcuserdata/
+
+# Web
+#
+web/icons/
+lib/generated_plugin_registrant.dart
+
+# IDEs and Editors
+#
+.vscode/
+.metadata
+*.iml
+*.sw?
+
+# macOS
+#
+.DS_Store
+
+# Miscellaneous
+#
+*.log
+*.env
+*.pem
+/key.properties
