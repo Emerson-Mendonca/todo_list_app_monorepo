@@ -24,6 +24,7 @@ class CounterView extends StatelessWidget {
     final l10n = context.l10n;
     return Scaffold(
       appBar: AppBar(title: Text(l10n.counterAppBarTitle)),
+      backgroundColor: const Color(0xFF333333),
       body: const Center(child: Card()),
     );
   }
@@ -34,6 +35,15 @@ class Card extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const BkUiCard();
+    return SingleChildScrollView(
+      child: Column(
+        children: const [
+          UiVerticalCardLg(),
+          UiVerticalCardSm(),
+          UiHorizontalCardLg(),
+          UiHorizontalCardSm(),
+        ],
+      ),
+    );
   }
 }
