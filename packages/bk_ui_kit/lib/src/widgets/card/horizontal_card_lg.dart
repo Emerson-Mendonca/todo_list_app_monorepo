@@ -42,71 +42,61 @@ class _UiHorizontalCardLgState extends State<UiHorizontalCardLg> {
                 borderRadius: BorderRadius.all(Radius.circular(8)),
               ),
             ),
-            Padding(
+            Container(
               padding: const EdgeInsets.all(8),
               child: Column(
-                children: const [
-                  Padding(
-                    padding: EdgeInsets.only(bottom: 8),
-                    child: SizedBox(
-                      width: 182,
-                      height: 14,
-                      child: Text(
-                        'Tag or info',
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          overflow: TextOverflow.ellipsis,
-                          fontFamily: 'Satoshi',
-                          fontSize: 12,
-                          fontWeight: FontWeight.w200,
-                          color: Colors.white,
-                          letterSpacing: 2,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(bottom: 8),
-                    child: SizedBox(
-                      width: 182,
-                      height: 40,
-                      child: Text(
-                        'A title line goes here and gets truncated at two lines A title line goes here and gets truncated at two lines',
-                        maxLines: 2,
-                        style: TextStyle(
-                          overflow: TextOverflow.ellipsis,
-                          fontFamily: 'Satoshi',
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
-                          letterSpacing: 2,
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
+                children: [
+                  Container(
                     width: 182,
-                    height: 40,
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: Text(
+                      'Tag or info Tag or infoTag or infoTag or infoTag or info',
+                      overflow: TextOverflow.ellipsis,
+                      style: Theme.of(context).textTheme.labelSmall!.merge(
+                            const TextStyle(
+                              color: Colors.white,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                    ),
+                  ),
+                  Container(
+                    width: 182,
+                    padding: const EdgeInsets.only(bottom: 8),
+                    alignment: Alignment.center,
+                    child: Text(
+                      'A title line goes here and gets truncated at two lines A title line goes here and gets truncated at two lines',
+                      maxLines: 2,
+                      style: Theme.of(context).textTheme.titleLarge!.merge(
+                            const TextStyle(
+                              color: Colors.white,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                    ),
+                  ),
+                  Container(
+                    width: 182,
+                    padding: const EdgeInsets.only(bottom: 8),
                     child: Text(
                       'A title line goes here and gets truncated at two lines A title line goes here and gets truncated at two lines',
                       overflow: TextOverflow.ellipsis,
                       maxLines: 2,
-                      style: TextStyle(
-                        overflow: TextOverflow.ellipsis,
-                        fontFamily: 'Satoshi',
-                        fontSize: 13,
-                        fontWeight: FontWeight.w300,
-                        color: Colors.white,
-                        letterSpacing: 2,
-                      ),
+                      style: Theme.of(context).textTheme.labelMedium!.merge(
+                            const TextStyle(
+                              color: Colors.white,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
                     ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(
+            Container(
               width: 28,
-              child: Align(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: const Align(
                 child: Icon(Icons.arrow_forward_ios, color: Colors.white),
               ),
             ),

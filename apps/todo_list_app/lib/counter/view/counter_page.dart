@@ -38,6 +38,7 @@ class Card extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: const [
+          UiModal(),
           UiVerticalCardLg(),
           UiVerticalCardSm(),
           UiHorizontalCardLg(),

@@ -15,15 +15,12 @@ class _UiVerticalCardSmState extends State<UiVerticalCardSm> {
     return Padding(
       padding: const EdgeInsets.all(8),
       child: Container(
-        padding: const EdgeInsets.only(
-          left: 6,
-          top: 6,
-          right: 6,
-          bottom: 6,
+        margin: const EdgeInsets.all(
+          6,
         ),
-        alignment: Alignment.centerLeft,
+        alignment: Alignment.center,
         width: 176,
-        height: 148,
+        height: 146,
         decoration: BoxDecoration(
           border: Border.all(
             width: 4,
@@ -40,67 +37,60 @@ class _UiVerticalCardSmState extends State<UiVerticalCardSm> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            const SizedBox(
+            Container(
               width: 152,
-              height: 40,
+              padding: const EdgeInsets.only(top: 8, bottom: 8),
               child: Text(
                 'A title line goes here and gets truncated at two lines A title line goes here and gets truncated at two lines',
                 maxLines: 2,
-                style: TextStyle(
-                  overflow: TextOverflow.ellipsis,
-                  fontFamily: 'Satoshi',
-                  fontSize: 13,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white,
-                  letterSpacing: 2,
-                ),
-              ),
-            ),
-            const SizedBox(
-              width: 152,
-              height: 36,
-              child: Text(
-                'A title line goes here and gets truncated at two lines A title line goes here and gets truncated at two lines',
-                maxLines: 2,
-                style: TextStyle(
-                  overflow: TextOverflow.ellipsis,
-                  fontFamily: 'Satoshi',
-                  fontSize: 13,
-                  fontWeight: FontWeight.w200,
-                  color: Colors.white,
-                  letterSpacing: 2,
-                ),
+                style: Theme.of(context).textTheme.titleLarge!.merge(
+                      const TextStyle(
+                        color: Colors.white,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
               ),
             ),
             SizedBox(
               width: 152,
-              height: 36,
-              child: TextButton(
-                onPressed: () {},
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Row(
-                    children: const [
-                      Text(
-                        'A title ',
-                        maxLines: 1,
-                        style: TextStyle(
-                          overflow: TextOverflow.ellipsis,
-                          fontFamily: 'Satoshi',
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
-                          letterSpacing: 2,
-                        ),
-                      ),
-                      Icon(
-                        size: 20,
-                        Icons.arrow_forward_rounded,
+              child: Text(
+                'A title line goes here and gets truncated at two lines A title line goes here and gets truncated at two lines',
+                overflow: TextOverflow.ellipsis,
+                maxLines: 2,
+                style: Theme.of(context).textTheme.labelMedium!.merge(
+                      const TextStyle(
                         color: Colors.white,
-                      )
-                    ],
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+              ),
+            ),
+            TextButton(
+              onPressed: () {},
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    width: 112,
+                    child: Text(
+                      'A title1545454564564dddd',
+                      maxLines: 1,
+                      style: Theme.of(context).textTheme.titleLarge!.merge(
+                            const TextStyle(
+                              color: Colors.white,
+                              overflow: TextOverflow.clip,
+                            ),
+                          ),
+                    ),
                   ),
-                ),
+                  const Icon(
+                    size: 24,
+                    Icons.arrow_forward_rounded,
+                    color: Colors.white,
+                  )
+                ],
+
               ),
             ),
           ],

@@ -38,63 +38,55 @@ class _UiHorizontalCardSmState extends State<UiHorizontalCardSm> {
               padding: const EdgeInsets.all(8),
               child: Column(
                 children: [
-                  Padding(
+                  Container(
+                    width: 302,
                     padding: const EdgeInsets.only(bottom: 8),
-                    child: SizedBox(
-                      width: 302,
-                      height: 14,
-                      child: Text(
-                        'Tag or info.',
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.labelSmall!.merge(
-                              const TextStyle(
-                                color: Colors.white,
-                                overflow: TextOverflow.ellipsis,
-                              ),
+                    child: Text(
+                      'Tag or info.',
+                      overflow: TextOverflow.ellipsis,
+                      style: Theme.of(context).textTheme.labelSmall!.merge(
+                            const TextStyle(
+                              color: Colors.white,
+                              overflow: TextOverflow.ellipsis,
                             ),
-                      ),
+                          ),
                     ),
                   ),
-                  Padding(
+                  Container(
+                    width: 302,
                     padding: const EdgeInsets.only(bottom: 8),
-                    child: SizedBox(
-                      width: 302,
-                      height: 44,
-                      child: Text(
-                        'A title line goes here and gets truncated at two lines A title line goes here and gets truncated at two lines',
-                        maxLines: 2,
-                        style: Theme.of(context).textTheme.titleLarge!.merge(
-                              const TextStyle(
-                                color: Colors.white,
-                                overflow: TextOverflow.ellipsis,
-                              ),
+                    child: Text(
+                      'A title line goes here and gets truncated at two lines A title line goes here and gets truncated at two lines',
+                      maxLines: 2,
+                      style: Theme.of(context).textTheme.titleLarge!.merge(
+                            const TextStyle(
+                              color: Colors.white,
+                              overflow: TextOverflow.ellipsis,
                             ),
-                      ),
+                          ),
                     ),
                   ),
-                  Padding(
+                  Container(
+                    width: 302,
                     padding: const EdgeInsets.only(bottom: 8),
-                    child: SizedBox(
-                      width: 302,
-                      height: 40,
-                      child: Text(
-                        'A title line goes here and gets truncated at two lines A title line goes here and gets truncated at two lines',
-                        maxLines: 2,
-                        style: Theme.of(context).textTheme.labelMedium!.merge(
-                              const TextStyle(
-                                color: Colors.white,
-                                overflow: TextOverflow.ellipsis,
-                              ),
+                    child: Text(
+                      'A title line goes here and gets truncated at two lines A title line goes here and gets truncated at two lines',
+                      maxLines: 2,
+                      style: Theme.of(context).textTheme.labelMedium!.merge(
+                            const TextStyle(
+                              color: Colors.white,
+                              overflow: TextOverflow.ellipsis,
                             ),
-                      ),
+                          ),
                     ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(
+            Container(
               width: 28,
-              child: Align(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: const Align(
                 child: Icon(Icons.arrow_forward_ios, color: Colors.white),
               ),
             ),
